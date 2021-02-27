@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "empacotador"
+version = "0.1.0"
+description = "O empacotador de dados do Dados Abertos de Feira"
+authors = ["Dados Abertos de Feira <dadosabertosdefeira@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+goodtables = "^2.5.4"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
