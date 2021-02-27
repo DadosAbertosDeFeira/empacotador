@@ -28,3 +28,8 @@ você encontrará um `query.sql` com a _query_ utilizada para exportação dos d
 
 Utilizamos o [Frictionless Data](https://frictionlessdata.io) para criar o esquema de dados e,
 posteriormente, validá-los. Veja mais sobre o _table-schema_ [aqui](https://specs.frictionlessdata.io/table-schema/#concepts).
+
+## Como contribuir?
+
+* Postgres
+* Poetry
