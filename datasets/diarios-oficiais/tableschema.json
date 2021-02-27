@@ -1,0 +1,85 @@
+{
+    "name": "Diário Oficial do poder legislativo e executivo da cidade de Feira de Santana",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "datasets/diarios-oficiais/datapackage-results.csv",
+            "profile": "tabular-data-resource",
+            "name": "datapackage-results",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "title": "ID",
+                        "description": "ID do Diário Oficial no banco da Maria Quitéria",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "crawled_at",
+                        "title": "Raspado em",
+                        "description": "Data e horário em que esse dado foi raspado",
+                        "type": "datetime",
+                        "format": "default"
+                    },
+                    {
+                        "name": "crawled_from",
+                        "title": "Raspado de",
+                        "description": "URL de onde esse dado foi raspado",
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    {
+                        "name": "notes",
+                        "title": "Observações",
+                        "description": "Notas sobre limpeza ou coleta dos dados",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "date",
+                        "title": "Data da publicação",
+                        "description": "Data referente a essa edição do diário",
+                        "type": "date",
+                        "format": "default"
+                    },
+                    {
+                        "name": "power",
+                        "title": "Poder",
+                        "description": "O poder pode ser executivo ou legislativo",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "year_and_edition",
+                        "title": "Ano e edição",
+                        "description": "Ano e edição do diário",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "is_legacy",
+                        "title": "Legado ou não?",
+                        "description": "Os diários antes de 2015 ficavam em um site diferente e tinham informações diferentes do atual.",
+                        "type": "boolean",
+                        "format": "default"
+                    },
+                    {
+                        "name": "events",
+                        "title": "Eventos",
+                        "description": "Acontecimentos desse diário",
+                        "type": "array",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
