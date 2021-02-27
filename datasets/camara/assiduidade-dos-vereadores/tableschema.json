@@ -1,0 +1,71 @@
+{
+    "name": "Lista de presença dos vereadores da Câmara Municipal de Feira de Santana",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "datasets/camara/assiduidade-dos-vereadores/datapackage-results.csv",
+            "profile": "tabular-data-resource",
+            "name": "datapackage-results",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "title": "ID",
+                        "description": "ID da presença do vereador no banco da Maria Quitéria",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "crawled_at",
+                        "title": "Raspado em",
+                        "description": "Data e horário em que esse dado foi raspado",
+                        "type": "datetime",
+                        "format": "default"
+                    },
+                    {
+                        "name": "crawled_from",
+                        "title": "Raspado de",
+                        "description": "URL de onde esse dado foi raspado",
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    {
+                        "name": "date",
+                        "title": "Data",
+                        "description": "Data da sessão",
+                        "type": "date",
+                        "format": "default"
+                    },
+                    {
+                        "name": "description",
+                        "title": "Descrição",
+                        "description": "Observação sobre a sessão ou assiduidade",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "council_member",
+                        "title": "Nome do vereador",
+                        "description": "Nome do vereador",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "status",
+                        "title": "Status",
+                        "description": "Se presente, ausente ou com falta justificada",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
