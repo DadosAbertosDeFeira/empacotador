@@ -1,0 +1,49 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "integer",
+            "format": "default"
+        },
+        {
+            "name": "crawled_at",
+            "type": "datetime",
+            "format": "default"
+        },
+        {
+            "name": "crawled_from",
+            "type": "string",
+            "format": "uri"
+        },
+        {
+            "name": "session_at",
+            "type": "datetime",
+            "format": "default"
+        },
+        {
+            "name": "public_agency",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "description",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "modality",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "codes",
+            "type": "string",
+            "format": "default"
+        },
+        {
+            "name": "events",
+            "type": "array",
+            "format": "default"
+        }
+    ]
+}
