@@ -2,46 +2,64 @@
     "fields": [
         {
             "name": "id",
+            "title": "ID",
+            "description": "ID da licitação no banco da Maria Quitéria",
             "type": "integer",
             "format": "default"
         },
         {
             "name": "crawled_at",
+            "title": "Raspado em",
+            "description": "Data e horário em que esse dado foi raspado",
             "type": "datetime",
             "format": "default"
         },
         {
             "name": "crawled_from",
+            "title": "Raspado de",
+            "description": "URL de onde esse dado foi raspado",
             "type": "string",
             "format": "uri"
         },
         {
             "name": "session_at",
+            "title": "Data e horário da sessão",
+            "description": "Data e horário da sessão dessa licitação",
             "type": "datetime",
             "format": "default"
         },
         {
             "name": "public_agency",
+            "title": "Órgão público",
+            "description": "Órgão público responsável por essa licitação",
             "type": "string",
             "format": "default"
         },
         {
             "name": "description",
+            "title": "Objeto",
+            "description": "Descrição da licitação: qual serviço ou produto adquirido",
             "type": "string",
             "format": "default"
         },
         {
             "name": "modality",
+            "title": "Modalidade da licitação",
+            "description": "Data e horário em que esse dado foi raspado",
             "type": "string",
             "format": "default"
         },
         {
             "name": "codes",
+            "title": "Códigos",
+            "description": "Códigos da modalidade e da licitação",
             "type": "string",
             "format": "default"
         },
         {
             "name": "events",
+            "title": "Histórico da licitação",
+            "description": "Eventos que aconteceram nessa licitação",
             "type": "array",
             "format": "default"
         }
