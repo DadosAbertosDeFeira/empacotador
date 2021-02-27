@@ -18,6 +18,7 @@ datasets
 ## De onde vem os dados?
 
 Os dados são coletados e armazenados pela [Maria Quitéria](https://github.com/DadosAbertosDeFeira/maria-quiteria/).
+Você pode acessá-los em nossa página no [Kaggle](https://www.kaggle.com/dadosabertosdefeira/).
 
 Para baixar os dados localmente você precisará ter configurado a variável de ambiente
 `DATABASE_URL` (veja o arquivo `.env.example`).
