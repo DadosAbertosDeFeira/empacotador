@@ -1,0 +1,71 @@
+{
+    "name": "Agenda das sessões da Câmara Municipal de Feira de Santana",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "datasets/camara/agenda/datapackage-results.csv",
+            "profile": "tabular-data-resource",
+            "name": "datapackage-results",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "title": "ID",
+                        "description": "ID do evento da agenda no banco da Maria Quitéria",
+                        "type": "integer",
+                        "format": "default"
+                    },
+                    {
+                        "name": "crawled_at",
+                        "title": "Raspado em",
+                        "description": "Data e horário em que esse dado foi raspado",
+                        "type": "datetime",
+                        "format": "default"
+                    },
+                    {
+                        "name": "crawled_from",
+                        "title": "Raspado de",
+                        "description": "URL de onde esse dado foi raspado",
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    {
+                        "name": "date",
+                        "title": "Data",
+                        "description": "Data da sessão",
+                        "type": "date",
+                        "format": "default"
+                    },
+                    {
+                        "name": "details",
+                        "title": "Pauta",
+                        "description": "Detalhes da pauta",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "event_type",
+                        "title": "Tipo da sessão",
+                        "description": "A sessão pode ser ordem do dia, sessão solene, sessões especiais, audiência pública",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "title",
+                        "title": "Título",
+                        "description": "Título da sessão",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
