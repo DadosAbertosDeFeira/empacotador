@@ -42,6 +42,14 @@ você encontrará um `query.sql` com a _query_ utilizada para exportação dos d
 Utilizamos o [Frictionless Data](https://frictionlessdata.io) para criar o esquema de dados e,
 posteriormente, validá-los. Veja mais sobre o _table-schema_ [aqui](https://specs.frictionlessdata.io/table-schema/#concepts).
 
+Para validar um pacote de dados execute:
+
+```
+goodtables datasets/camara/assiduidade-dos-vereadores/datapackage-results.csv
+```
+
+É esperado que o arquivo esteja na mesma pasta que o seu `table-schema.json`.
+
 ## Como contribuir?
 
 Para contribuir você precisará ter instalado:
