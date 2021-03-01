@@ -1,0 +1,50 @@
+{
+    "name": "Leis do município de Feira de Santana",
+    "schema": "tabular-data-package",
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "datasets/camara/leis/leis.csv",
+            "profile": "tabular-data-resource",
+            "name": "leis",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "titulo",
+                        "title": "Título",
+                        "description": "Numeração da lei e a data",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "categoria",
+                        "title": "Categoria",
+                        "description": "Categoria da lei",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "resumo",
+                        "title": "Resumo",
+                        "description": "Resumo da lei",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "texto",
+                        "title": "Texto",
+                        "description": "Texto completo da lei",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
